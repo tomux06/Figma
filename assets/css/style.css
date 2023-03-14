@@ -58,10 +58,11 @@ div.cards h1, p.letf{
     gap:30px;
 }
 .cards1 .btn{
-    background-color: #FF7000;
+    background-color: black;
     text-decoration: none;
     width:190px;
-    height:50px;
+    height:80px;
+    color: white;
 }
 #open-btn{
     background-color: black;
@@ -78,7 +79,7 @@ div.cards h1, p.letf{
 #modal{
     background-color:black;
     position: absolute;
-    top: 78%;
+    top: 9%;
     left:45%;
     
     width:200px;
@@ -103,6 +104,7 @@ div.cards h1, p.letf{
     cursor:pointer;
     font-size:3rem;
     color:red;
+    padding-bottom: 10px;
 }
 #modal-container{
     display: none;
@@ -113,6 +115,10 @@ div.cards h1, p.letf{
     height: 100%;
     z-index: 1;
 
+}
+.cards1 .card img{
+    height:300px;
+    width:300px;
 }
 
 
@@ -173,18 +179,7 @@ div.feature h1.need{
     padding-bottom: 20px;
     position: relative;
 }
-div.feature h1.need::after{
-    content:"";
-    display:block;
-    position:absolute;
-    background:#FF7000;
-    width:80px;
-    height:3px;
-    bottom:-3px;
-    border-radius: 10px;
-    
 
-}
 .card-body{
     padding-bottom: 20px;
     position: relative;
@@ -230,7 +225,27 @@ div.feature h1.need::after{
     cursor: pointer;
     border-radius: 5px;
   }
+  .cards1 .cocktail::after{
+    content: "+";
+    position: absolute;
+    right: 0px;
+  }
+  .cards1 .cocktail{
+    cursor: pointer;
+    position: relative;
+  }
+  .cards1 .card-text{
+    height:0px;
+    overflow:hidden;
+    transition: .5s;
+  }
   
+  .card .card-body.active .card-text{
+    height:150px;
+  }
+
+
+
   .two .btn:hover {
     background-color: black;
   }
@@ -283,7 +298,87 @@ div.feature div.item img{
     border-radius: 20px;
     border: 5px solid black;
 }
+.urgent{
+    background-color:black;
+}
 
+
+.urgent .slidershow{
+    width:500px;
+   height: 400px;
+    overflow: hidden;
+    
+}
+
+
+.navigation{
+    position:relative;
+    bottom: 20px;
+    justify-content: center;
+    
+    display:flex;
+}
+.bar{
+    width:50px;
+    height:10px;
+    border: 2px solid black;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+    
+}
+.bar:hover{
+    background:#fff;
+}
+input[name="r"]{
+    position:absolute;
+    visibility: hidden;
+}
+.slides{
+    width:550%;
+    height:100%;
+    display:flex;
+    margin-left: -12px;
+}
+.slide{
+    width:20%;
+    transition:0.6s;
+   
+}
+.slide img{
+    width:100%;
+    height:100%;
+    
+}
+.slide{
+    border-radius: 20px;
+    
+}
+#r1:checked ~ .s1{
+    margin-left:0;
+}
+#r2:checked ~ .s1{
+    margin-left:-20%;
+}
+#r3:checked ~ .s1{
+    margin-left:-40%;
+}
+#r4:checked ~ .s1{
+    margin-left:-60%;
+}
+#r5:checked ~ .s1{
+    margin-left:-80%;
+}
+
+.footer .cock{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+}
+.footer .text{
+    padding-right: 50px;
+}
 @media (max-width: 768px) { 
     .middlebar{
         flex-direction: column;
