@@ -254,11 +254,13 @@ div.feature h1.need{
   }
 
   div.footer img.book{
-    height:8%;
+    height:20px;
+    width:20px
   }
 
   div.footer img.time{
-    height:8%;
+    height:20px;
+    width:20px
   }
   p{
   font-family: 'Roboto', sans-serif;
@@ -395,3 +397,37 @@ input[name="r"]{
         flex-direction:column;
     }
  }
+
+ @media (max-width: 768px) { 
+    .banner ul{
+        flex-direction: column;
+    }
+ }
+
+ @media (max-width: 768px) { 
+    .footer div{
+        flex-direction: column;
+    }
+ }
+
+ @media (max-width: 768px) { 
+ .urgent .slidershow{
+    width:300px;
+   height: 300px;
+    overflow: hidden;
+    
+}
+}
+
+@media (max-width: 768px) { 
+#modal{
+    width:150px;
+    height:60px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
