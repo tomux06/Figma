@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      .footer {
-        background-image: url("images/back.jpg");
-      }
-    </style>
+    <style></style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,6 +46,7 @@
   </head>
   <body>
     <header class="container-fluid d-flex align-items-center">
+      
       <div class="container d-flex justify-content-between align-items-center">
         <p class="mb-0" style="color: white">Socialiniai tinklai:</p>
 
@@ -92,68 +89,84 @@
 
     <div class="menu container-fluid d-flex align-items-center">
       <div class="container d-flex justify-content-start">
-        <ul class="list-unstyled d-flex mb-0">
-          <li>
-            <a href="#"><b>Pagrindinis</b></a
-            ><img src="images/plus.png" />
+        <ul class="nav-menu list-unstyled d-flex mb-0">
+          <li class="nav-item">
+            <img src="images/homepage.png" />
+            <a href="index.html"><b>Pagrindinis</b></a>
           </li>
-          <li>
-            <a href="#"><b>Galerija</b></a
-            ><img src="images/plus.png" />
+          <li class="nav-item straipsniai">
+            <img class="postas" src="images/book1.png" />
+            <a href="straipsniai.html"><b>Straipsniai</b></a>
           </li>
-          <li>
-            <a href="#"><b>Receptai</b></a
-            ><img src="images/plus.png" />
+          <li class="nav-item galerija">
+            <img class="gallery" src="images/gallery.png" />
+            <a href="galerija.html"><b>Galerija</b></a>
           </li>
-          <li>
-            <a href="#"><b>Apie mus</b></a
-            ><img src="images/plus.png" />
+          <li class="nav-item">
+            <img src="images/cocktail-recipe.png" />
+            <a href="receptai.html"><b>Receptai</b></a>
           </li>
-          <li>
-            <a id="color" href="#"><b>Kontaktai</b></a
-            ><img src="images/plus.png" />
+          <li class="nav-item">
+            <img src="images/call.png" />
+            <a id="color" href="kontaktai.html"><b>Kontaktai</b></a>
           </li>
-        </ul>
+        </ul>        
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </div>
+ 
     <div class="feature">
+      <video 
+        class="video-bg"
+        src="images/video.mp4"
+        autoplay
+        muted
+        loop
+        type="video/mp4"
+      ></video>
       <div class="container-fluid">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img src="images/1.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/2.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/3.jpeg" />
-          </div>
-          <div class="item">
-            <img src="images/4.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/5.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/6.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/7.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/8.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/9.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/13.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/11.jpg" />
-          </div>
-          <div class="item">
-            <img src="images/12.jpg" />
+        <div class="container">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="images/1.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/2.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/3.jpeg" />
+            </div>
+            <div class="item">
+              <img src="images/4.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/5.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/6.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/7.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/8.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/9.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/13.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/11.jpg" />
+            </div>
+            <div class="item">
+              <img src="images/12.jpg" />
+            </div>
           </div>
         </div>
       </div>
@@ -162,7 +175,7 @@
         <div class="container">
           <div class="mt-5 mb-5">
             <h1 class="need">
-              Rekomenduojami <span style="color: orange">kokteiliai:</span>
+              <span style="color: orange"> Rekomenduojami receptai:</span>
             </h1>
             <br />
 
@@ -179,12 +192,12 @@
                   <h5 class="cocktail">Helsinki Mule</h5>
                 </div>
                 <div class="answer">
-                  <p class="card-text">
-                    Teritatis et quasi architecto. Sed ut perspiciatis unde
-                    omnis iste natus error sit voluptatem accusantium dolore
-                    mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    invent.
-                  </p>
+                  <ul class="card-text">
+                    <li>40ml serbentų degtinės</li>
+                    <li>150ml imbierinio alaus</li>
+                    <li>20ml grenadino sirupo</li>
+                    <li>Skiltelė laimo</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -194,12 +207,14 @@
               <div class="card-body">
                 <div><h5 class="cocktail">Mojito</h5></div>
                 <div>
-                  <p class="card-text">
-                    Teritatis et quasi architecto. Sed ut perspiciatis unde
-                    omnis iste natus error sit voluptatem accusantium dolore
-                    mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    invent.
-                  </p>
+                  <ul class="card-text">
+                    <li>Mėta</li>
+                    <li>Grūstas ledas</li>
+                    <li>40ml balto romo</li>
+                    <li>150ml gazuoto vandens</li>
+                    <li>20ml mėtų sirupo</li>
+                    <li>5g rudo cukraus</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -209,61 +224,75 @@
               <div class="card-body">
                 <div><h5 class="cocktail">Cuba Libre</h5></div>
                 <div>
-                  <p class="card-text">
-                    Teritatis et quasi architecto. Sed ut perspiciatis unde
-                    omnis iste natus error sit voluptatem accusantium dolore
-                    mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    invent.
-                  </p>
+                  <ul class="card-text">
+                    <li>Skiltelė laimo</li>
+                    <li>40ml rudo romo</li>
+                    <li>150ml colos</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <a class="d-flex justify-content-center mt-5" href="#">
-              <button class="btn" type="button">
-                Visi rekomenduojami kokteiliai
-              </button>
+            <a class="d-flex justify-content-center mt-5" href="receptai.html">
+              <button type="button">Visi receptai</button>
             </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="urgent container-fluid pt-5 pb-5">
-      <div class="slidershow middle container">
-        <div class="slides">
-          <input type="radio" name="r" id="r1" checked />
-          <input type="radio" name="r" id="r2" />
-          <input type="radio" name="r" id="r3" />
-          <input type="radio" name="r" id="r4" />
-          <input type="radio" name="r" id="r5" />
-
-          <div class="slide s1">
-            <img src="images/21.jpg" />
-          </div>
-          <div class="slide">
-            <img src="images/22.jpg" />
-          </div>
-          <div class="slide">
-            <img src="images/23.jpg" />
-          </div>
-          <div class="slide">
-            <img src="images/24.jpg" />
-          </div>
-          <div class="slide">
-            <img src="images/25.jpg" />
-          </div>
+    <div class="posts container-fluid">
+      <div class="container">
+        <div class="div">
+          <h1>Populiariausi straipsniai</h1>
         </div>
-        <div class="navigation">
-          <label for="r1" class="bar"></label>
-          <label for="r2" class="bar"></label>
-          <label for="r3" class="bar"></label>
-          <label for="r4" class="bar"></label>
-          <label for="r5" class="bar"></label>
-        </div>
+          
+          <div class="row">
+              <div class="col-sm-4">
+  
+          <div class="grid-item">
+              <div class="kortos">
+                   <img class="card-img" src="images/40.jpg" alt="">
+                   <div class="card-content">
+                      <h3 class="card-header">10 populiariausių kokteilių receptų</h3>
+                      
+                      <button class="card-btn">Visit <span>&rarr;</span></button>
+                  </div>
+                   </div>
+                  </div>
+              </div>
+          
+          <div class="col-sm-4">
+          <div class="grid-item">
+              <div class="kortos">
+                   <img class="card-img" src="images/30.jpg" alt="">
+                   <div class="card-content">
+                      <h3 class="card-header">5 patarimai gaminantiems kokteilius</h3>
+                      
+                      <button class="card-btn">Visit <span>&rarr;</span></button>
+                  </div>
+                   </div>
+                  </div>
+              </div>
+      
+          <div class="col-sm-4">
+          <div class="grid-item">
+              <div class="kortos">
+                   <img class="card-img" src="images/35.jpg" alt="">
+                   <div class="card-content">
+                      <h3 class="card-header">5 patarimai gaminantiems kokteilius</h3>
+                      
+                      <button class="card-btn">Visit <span>&rarr;</span></button>
+                  </div>
+                   </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    <div class="banner container-fluid d-flex align-items-center mt-5 mb-5">
+  </div>
+  </div>
+  </div>
+    <div class="banner container-fluid d-flex align-items-center">
       <div class="container d-flex flex-column align-items-center">
         <div class="d-flex flex-column align-items-center">
           <h1>Mūsų<span style="color: orange"> Partneriai:</span></h1>
@@ -281,7 +310,7 @@
         </div>
       </div>
     </div>
-    <div class="footer bg-image bg-dark container-fluid pt-5 pb-5">
+    <div class="footer container-fluid pt-5 pb-5">
       <div class="container d-flex">
         <div class="col-sm-3">
           <img class="cock" src="images/logo.jpg" />
@@ -349,7 +378,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright container-fluid bg-dark">
+    <div class="copyright container-fluid">
       <div class="container">
         <p style="color: white; text-align: left" class="p-5 mb-0">
           Copyright 2021 © NGOO Figma Template. Designed by Rometheme.

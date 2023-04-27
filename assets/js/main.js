@@ -18,10 +18,7 @@ window.addEventListener('click', function(e){
 
     }
 });
-//Kontaktai
-let colorRed = document.getElementById('color');
- console.log(colorRed.lastChild);
- colorRed.lastChild.style.color = 'orange';
+
 
 
  //Accordion
@@ -32,3 +29,19 @@ let colorRed = document.getElementById('color');
         this.classList.toggle('active');
     })
  };
+
+
+ //hamburger
+
+ const hamburger = document.querySelector(".hamburger");
+ const navMenu = document.querySelector(".nav-menu");
+
+ hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+ })
+
+ document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+ }))
